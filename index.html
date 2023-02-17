@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    </head>
+        <body>
+            <!-- Start a Menu part -->
+            <div id="navbar">
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#register">Registeration</a></li>
+                </ul>
+            </div>
+
+             <!-- End a Menu part -->
+
+             <!-- Start a Gallery part -->
+             <span id="gallery"><h1> My Gallery</h1></span>
+             <div class="galleryImages">
+                <div class="images">
+                    <img src="pic1.jpeg">
+                </div>
+                <div class="images">
+                    <img src="pic2.jpeg">
+                </div>
+                <div class="images">
+                    <img src="pic3.jpeg">
+                </div>
+                <a class="slider_btn previous" onclick="setslides(-1)">&#10094;</a>
+                <a class="slider_btn next" onclick="setslides(1)">&#10095;</a>
+
+             </div>
+
+            <!-- End a Gallery part -->
+
+             <!-- Start About part -->
+             <span id="about"><h1>About Me</h1></span>
+             <div id="aboutsection">
+                <div class="mypic">
+                </div>
+                <div class="text">
+                    
+                        <p>
+                            I am Eman Hassan 
+                              <br>
+                            3rd leval at faculty of computers and information
+                            <br>
+                            Drpartment : Computer Science
+                            <br>
+                            GPA for last semester is : 3.8 from 4
+                            <br>
+                            I am a co-lead non technical at GDSC
+                            <br>
+                            and media voulenteer at IEEE
+                        </p>
+                    
+                </div>
+                
+             </div>
+             <br>
+
+             <!-- End About part -->
+
+            <!-- Start a Registeration part -->
+            
+            <div id="form">
+            <h1><span id="register"><u>Registeration Form</u></span></h1>
+            <table >
+            <form  class="form1" action="Thanks.html" name="myform" onsubmit="return validateform()">
+            <tr>
+                    <td>
+                   <label for="fname">First Name :</label>
+                   </td>
+             <td>
+            <input id="fname" type="text"  name="fastname" minlength="4" maxlength="15"  required />
+            <br />
+            </td>
+        </tr>
+         <tr>
+         <td>
+            <label for="lname">Last Name :</label>
+        </td>
+        <td>
+            <input id="lname" type="text"  name="lastname" minlength="4" maxlength="15"  required />
+            <br />
+        </td>
+        </tr>
+<tr>
+    <td>
+            <label for="user">UserName :</label>
+        </td>
+        <td>
+            <input id="user" type="text" name="username" minlength="7" maxlength="20"  required/>
+             <br />
+            </td>
+            </tr>
+      <tr>
+        <td>
+            <label for="pass">Password :</label>
+        </td>
+        <td >
+            <input  id="pass" type="password" name="pwd"    minlength="8" required/>
+
+             <br />
+            </td>
+            </tr>
+
+<tr>
+        <td>
+            <label for="mail">Email :</label>
+        </td>
+        <td>
+            <input id="mail" type="email" name="email" required/>
+        </td>
+        <br />
+</tr>
+
+<tr>
+    <td>
+        <label > Address:</label>
+    </td>
+    <td>
+        <textarea required></textarea>
+        <br/>
+    </td>
+    <br />
+</tr>
+<tr>
+    <td>
+           <label for="userage">Age :</label>
+    </td>
+    <td>
+           <input id="userage" type="number" name="age"  max="45" min="16" required />
+    </td>
+           <br />
+</tr>
+<tr>
+    <td>
+        <label >Gender :</label>
+    </td>
+    <td>
+        <input type="radio" name="gender" value="female" required/><b>Female</b>
+        <input type="radio" name="gender" value="male"/><b>Male</b>
+        <input type="radio" name="gender"/><b>Prefer not to say</b> 
+        <br />
+    </td>
+</tr>
+           
+         
+<tr>
+    <td>
+           <label rowspan="3">Interests :</label>
+        </td>
+        <td rowspan="3"> 
+            <ul>
+      <li><input type="checkbox"  name="opt1" value="reading" /><u>Reading</u></li>  
+      <li><input type="checkbox" name="opt2" value="swimming" /><u>Swimming</u></li>  
+        <li><input type="checkbox" name="opt3" value="biking" /><u>Biking</u></li>
+        
+        </ul>
+        <br/>
+    </td>
+   
+    </tr>
+    <tr></tr>
+   <tr></tr>
+    <br/>
+    
+<tr>
+    <td>
+           <label>Country :</label>
+           <select name="country">
+               <option>EGY</option>
+               <option>KSA</option>
+               <option>IRL</option>
+               <option>ISL</option>
+               <option>UAE</option>
+   
+           </select>
+           
+        </td>
+        </tr>
+        
+        <br />
+        
+<tr>
+    <td>
+        <input type="submit" value="submit"/>
+    </td>
+</tr>
+
+        </form>
+    </table>
+</div>
+            <!-- End a Registeration part -->
+
+            <script src="main.js"></script>
+        </body>
+    
+</html>
